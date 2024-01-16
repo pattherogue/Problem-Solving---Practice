@@ -1,5 +1,5 @@
+//FizzBuzz
 //You are given a positive integer number n, where it is less than 100 (excluded).
-
 function fizzBuzz (n)
 {// if n is not an interger, less than 1, or greater than or equal to 100
   if (!Number.isInteger(n) || n < 1 || n >= 100)
@@ -37,6 +37,8 @@ function fizzBuzz (n)
 fizzBuzz(0);
 fizzBuzz(100);
 fizzBuzz(16);
+
+//Letter Count
 
 
 
