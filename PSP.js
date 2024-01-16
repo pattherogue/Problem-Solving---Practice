@@ -51,32 +51,36 @@ function letterCount (word)
     return;
   }
 
+
   for (const letter of word)
   {
+    //if dictionary already has the letter:
     if (!alphabet.includes(letter.toLowerCase()))
     {
       console.error("Error");
       return;
     }
   }
-
+//create a dictionary to hold letter counts
   let letterCounts = {};
-
+//for each letter in word:
   for (let letter of word)
   {
     let lowerCaseLetter = letter.toLowerCase();
 
-    // If the letter is already in the dictionary, increment its count
+    //If the letter is already in the dictionary, increment its count
     if (letterCounts[lowerCaseLetter] !== undefined)
     {
+    //increment the count of the letter by 1
       letterCounts[lowerCaseLetter]++;
     }
     else
     {
+    // set the count of the letter to 1
       letterCounts[lowerCaseLetter] = 1;
     }
   }
-
+//	return the dictionary that holds the letter counts
   return letterCounts;
 }
 
